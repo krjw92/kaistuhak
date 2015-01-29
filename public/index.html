@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>KAIST 유학 :: Home </title>
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-cosmo.css">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	
+	
+		<style type="text/css">
+			
+			#footer {
+				position: static;
+				bottom: 0;
+				width: 100%;
+				background-color: #333;
+				padding-top: 20px;
+				padding-bottom: 10px;
+			}
+		
+			#footer-top {
+				border-bottom: 1px solid #555;
+				padding-bottom: 14px;
+			}
+
+			.box {
+				width: 50px;
+				height: 50px;
+				background-color: red;
+			}
+
+			.circle {
+				width: 50px;
+				height: 50px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+			}
+
+			#LogInModalLabel {
+				font-family: 'NanumGothic';
+				font-weight: bold;
+				font-size: 18px;
+			}
+		
+			#SendMailModalLabel {
+				font-family: 'NanumGothic';
+				font-weight: bold;
+				font-size: 18px;
+			}
+
+
+		</style>
+
+	</head>
+	
+	<body>
+
+
+
+	<div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="LogInModalLabel">로그인</h4>
+      </div>
+      <div class="modal-body">
+        <p> 이메일 아이디</p>
+				<input type="text"> (@kaist.ac.kr 붙여서)<br>
+				<p class="passwordText"> 비밀번호 </p>
+				<input type="password"><br><br>
+				<div class="savecheckbox">
+					<label style="font-size: 13px"><input type="checkbox" name="remeber" value="true"> 1주일간 정보를 기억합니다</label>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary pull-left" data-toggle="modal" data-target="#RegisterModal">회원가입</button>
+        <button type="button" class="btn btn-success">로그인</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="LogInModalLabel">회원가입</h4>
+      </div>
+      <div class="modal-body">
+        <p> 이름 </p>
+				<input type="text"><br>
+				<p> 카이스트 이메일 </p>
+				<input type="text"><span style="font-size:13px"> ( 입력하신 메일주소로 인증메일이 전송됩니다. )</span>
+				<p class="passwordText"> 비밀번호 </p>
+				<input type="password"><br>
+				<p class="passwordText"> 비밀번호 확인</p>
+				<input type="password"><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">회원가입</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- navbar -->
+<nav class="navbar navbar-default navbar-top" role="navigation" style="margin:0px">
+  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		  <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">KAIST유학 <i class="fa fa-home"></i></a>
+  </div>
+
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+		<ul class="nav navbar-nav">
+      
+			<li class="menu-item"><a href="#">유학고민&질문</a></li>
+		 	
+			<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">어학시험 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">토플</a></li>
+          <li><a href="#">GRE</a></li>
+          <li><a href="#">GRE Subject</a></li>
+        </ul>
+      </li>
+			
+			<li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">장학금 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header"><합격 전 장학금></li>
+          <li><a href="#">풀브라이트</a></li>
+          <li><a href="#">고등교육재단(SK)</a></li>
+          <li><a href="#">삼성장학회</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header"><합격 후 장학금></li>
+          <li><a href="#">관정장학금</a></li>
+          <li><a href="#">국가장학금</a></li>
+					<li><a href="#">정송재단</a></li>
+        </ul>
+      </li>
+			
+			<li class="menu-item"><a href="#">원서접수</a></li>
+			
+			<li class="menu-item"><a href="#">발표소식</a></li>
+			
+			<li class="menu-item"><a href="#">Admission 포스팅</a></li>
+				
+  	 <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">유학생게시판 <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">출국자모임</a></li>
+          <li><a href="#">자유게시판</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header"><미국 유학생 교류></li>
+          <li><a href="#">Buy & Sell</a></li>
+          <li><a href="#">기숙사share</a></li>
+					<li><a href="#">학회함께가기</a></li>
+					<li><a href="#">여행함께가기</a></li>
+        </ul>
+      </li>
+	    </ul>	
+    
+			<ul class="nav navbar-nav pull-right">
+      	<li class="menu-item" style="cursor:pointer"><a data-toggle="modal" data-target="#LogInModal"><i class="fa fa-user"></i> 로그인 </a></li>
+			</ul>
+		
+  </div>
+</nav>
+
+	
+		<!-- Introduction -->
+		<div class="jumbotron" style="margin:0px; padding-left: 70px; padding-bottom: 40px; background-image:url(http://eoimages.gsfc.nasa.gov/images/imagerecords/55000/55167/earth_lights_lrg.jpg); background-position-y: -70px; background-position-x: 140px; position:static; background-repeat: repeat-x; background-size: 1500px 850px; text-shadow: black 0.1em 0.1em 0.1em;">
+			
+ 			<h1 style="color: lightcoral">Welcome, <span style="font-size: 40px; color:white;">여기는 <span style="color: lightskyblue">KAIST</span> 유학 페이지입니다 <span></h1>
+			</br>
+			<p style="font-size: 15px; color:white;">'KAIST유학'은 카이스트에서 유학을 준비하는 사람들, 
+			</br>또는 유학을 떠나 있는 사람들이 </br>
+			함께 교류하고 이야기 나눌 수 있는 공간입니다.</p>
+			</br>
+<!--			<p style="font-size: 13px; color:lightsteelblue;"> Made by Jeewon Hwang in Computer Science Department at KAIST </p> -->
+		</div>
+	
+
+
+		
+		<h2>라이언 등록</h2>
+		<form action="http://codelion.net" method="POST">
+			이름 : <input type="txt" name="lion_name"><br>
+			성별 :
+				<select name="gender">
+					<option value="male">male</option>
+					<option value="female">female</option>
+				</select><br>
+			특징 : <textarea name="character"></textarea>
+			<input type="submit" value="등록">
+		</form>
+
+
+
+
+
+
+
+
+<div id="profile-header" class="page-header">
+    <h1>Profile</h1>
+  </div>
+
+<!--
+<div style="position: fixed; bottom: 10px; left:12px;">
+		<span class="fa-stack fa-lg" style="white-space:nowrap;">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+			</span>
+</div>
+-->
+
+
+
+
+<!--footer practice-->
+<div id="footer"> 
+	<div class="container" style="max-width: 950px">
+  	<!-- profile -->
+  	<div class="row">
+    	<div class="col-md-4" style="padding-left:5px;">
+			<h3 style="color:white; font-family: courier; font-size: 22px; font-weight: bold;"><i class="fa fa-envelope" style="font-size: 20px; color: grey;"></i>&nbsp;Contact Us</h3>
+			<p style="color: lightgrey; line-height: 1.8em; font-size:13px; margin-top:20px; text-align: justify;">'kaist유학'을 사용하면서 오류를 발견하거나, 불편한 점, 또는 건의사항이 있다면, 개발자에게 메일을 보내주세요.</p>
+			<a data-toggle="modal" data-target="#SendMailModal" class="btn btn-default btn-sm pull-right" data-show="true" href="mail.html">메일보내기</a>
+	  	</div>
+			<div class="col-md-1">
+			</div>
+	    <div class="col-md-7" style="padding-right:0px;">
+    	  <h3 style="color:white; font-family: courier; font-size:22px; font-weight: bold"><i class="fa fa-users" style="font-size: 20px; color: grey"></i>&nbsp;Community Members</h3>
+				<div class="well well-lg" style="margin-top:20px; background-color: #444; border-color:#444; text-align: center">
+				<span style="color: white; font-size: 13px; ">현재 <span style="color:lightsalmon; font-weight:bold">1,234</span>명의 회원이 이 커뮤니티를 사용하고 있습니다</span>
+				</div>
+    	</div>
+  	</div>
+		<br>
+		<div class="row" style="border-top: 1px solid #555">
+		<div class="col-md-8" style="padding-left:5px">
+		<p style="color: #999; font-size: 12px; margin-top:10px;"><span style="color: lightgrey">Made by</span> Jeewon Hwang in Computer Science Department at KAIST. © www.kaistuhak.dd.gl since 2015</p>
+		</div>
+		<div class="col-md-4">
+		<h3 style="margin-top:10px; text-align: right; font-size:18px; font-weight:bold"><span style="color: lightskyblue; font-family: initial">kaist</span><span style="color: white; font-family: initial">uhak</span></h1>
+		</h3>
+		</div>
+</div>
+
+</div>
+
+	<div class="modal fade" id="SendMailModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="SendMailModalLabel">메일 보내기</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">보내기</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+				//$('#LogInModal').on('shown.bs.modal', function () {
+    		//	$('#myInput').focus()
+			  //})
+	</script>
+	</body>
+
+</html>
