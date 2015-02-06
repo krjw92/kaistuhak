@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'gmail'
 
 gem 'execjs'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -4,15 +4,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>KAIST 유학 :: Home </title>
-		<link rel="stylesheet" type="text/css" href="assets/bootstrap-cosmo.css">
-		<link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-cosmo.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">	
 	
 		<style type="text/css">
 			
 			#footer {
 				position: static;
-				bottom: 0;
+				bottom: 0px;
 				width: 100%;
 				background-color: #333;
 				padding-top: 20px;
@@ -59,7 +59,26 @@
 	<body>
 
 
+<!--
+	<div class="modal fade" id="SendMailModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+ <div class="modal-content">  -->
+    <!--  <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="SendMailModalLabel">메일 보내기</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">보내기</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+      </div> -->
 
+<!--
+    </div> 
+  </div> 
+	</div>
+-->
 	<div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -183,7 +202,7 @@
 
 	
 		<!-- Introduction -->
-		<div class="jumbotron" style="margin:0px; padding-left: 70px; padding-bottom: 40px; background-image:url(http://eoimages.gsfc.nasa.gov/images/imagerecords/55000/55167/earth_lights_lrg.jpg); background-position-y: -70px; background-position-x: 140px; position:static; background-repeat: repeat-x; background-size: 1500px 850px; text-shadow: black 0.1em 0.1em 0.1em;">
+		<div class="jumbotron" style="margin:0px; padding-left: 70px; padding-bottom: 60px; background-image:url(http://eoimages.gsfc.nasa.gov/images/imagerecords/55000/55167/earth_lights_lrg.jpg); background-position-y: -70px; background-position-x: 140px; position:static; background-repeat: repeat-x; background-size: 1800px 950px; text-shadow: black 0.1em 0.1em 0.1em;">
 			
  			<h1 style="color: lightcoral">Welcome, <span style="font-size: 40px; color:white;">여기는 <span style="color: lightskyblue">KAIST</span> 유학 페이지입니다 <span></h1>
 			</br>
@@ -218,6 +237,12 @@
 
 <div id="profile-header" class="page-header">
     <h1>Profile</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
   </div>
 
 <!--
@@ -240,7 +265,7 @@
     	<div class="col-md-4" style="padding-left:5px;">
 			<h3 style="color:white; font-family: courier; font-size: 22px; font-weight: bold;"><i class="fa fa-envelope" style="font-size: 20px; color: grey;"></i>&nbsp;Contact Us</h3>
 			<p style="color: lightgrey; line-height: 1.8em; font-size:13px; margin-top:20px; text-align: justify;">'kaist유학'을 사용하면서 오류를 발견하거나, 불편한 점, 또는 건의사항이 있다면, 개발자에게 메일을 보내주세요.</p>
-			<a data-toggle="modal" data-target="#SendMailModal" class="btn btn-default btn-sm pull-right" data-show="true" href="mail.html">메일보내기</a>
+			<a data-toggle="modal" data-target="#SendMailModal" class="btn btn-default btn-sm pull-right" data-show="true" href="#">메일보내기</a>
 	  	</div>
 			<div class="col-md-1">
 			</div>
@@ -261,25 +286,10 @@
 		</h3>
 		</div>
 </div>
-
+</div>
 </div>
 
-	<div class="modal fade" id="SendMailModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="SendMailModalLabel">메일 보내기</h4>
-      </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success">보내기</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 
